@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://wwwfatemero-dev.github.io/matin-bandicoot/sitemap.xml

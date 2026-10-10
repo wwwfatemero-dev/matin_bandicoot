@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>متین باندیکوت | بازی سه‌بعدی رایگان</title>
-<meta name="description" content="متین باندیکوت؛ بازی ماجراجویی سه‌بعدی رایگان شبیه کراش باندیکوت با هشت مرحله، باس‌فایت و موسیقی آرام. همین الان آنلاین بازی کن، بدون دانلود و کاملاً رایگان.">
+<title>متین باندیکوت | Matin Bandicoot | بازی سه‌بعدی رایگان</title>
+<meta name="description" content="متین باندیکوت؛ بازی ماجراجویی سه‌بعدی رایگان شبیه کراش باندیکوت با ده مرحله، باس‌فایت و موسیقی آرام. همین الان آنلاین بازی کن، بدون دانلود و کاملاً رایگان.">
 <meta name="keywords" content="متین باندیکوت, بازی متین باندیکوت, بازی سه بعدی رایگان, بازی شبیه کراش باندیکوت, Matin Bandicoot">
 <meta property="og:title" content="متین باندیکوت | بازی سه‌بعدی رایگان">
-<meta property="og:description" content="بازی ماجراجویی سه‌بعدی رایگان با هشت مرحله و موسیقی آرام.">
+<meta property="og:description" content="بازی ماجراجویی سه‌بعدی رایگان با ده مرحله و موسیقی آرام.">
 <meta property="og:type" content="website">
-<meta name="robots" content="index,follow">
+<meta name="robots" content="index,follow"><script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"متین باندیکوت","alternateName":"Matin Bandicoot","inLanguage":"fa","genre":"Adventure","playMode":"SinglePlayer","applicationCategory":"Game","isAccessibleForFree":true}</script>
 <style>
 :root{--bg:#10331f;--panel:#fff6dc;--ink:#3a2210;--accent:#ff7a1a;--btn:#ffd36b;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -42,11 +42,9 @@ canvas{width:100%;height:100%;display:block;touch-action:none}
 #kn{position:absolute;left:50%;top:50%;width:54px;height:54px;margin:-27px;border-radius:50%;background:var(--btn);box-shadow:0 4px 0 #c99a2c;pointer-events:none}
 .mini{position:absolute;bottom:8px;width:38px;height:38px;border-radius:50%;border:0;background:var(--panel);font-size:18px;opacity:.85}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"متین باندیکوت","alternateName":["Matin Bandicoot","بازی متین باندیکوت"],"description":"بازی ماجراجویی سه‌بعدی رایگان با هشت مرحله، باس‌فایت و موسیقی آرام. آنلاین و بدون دانلود.","inLanguage":"fa","genre":"Adventure","gamePlatform":"Web Browser","applicationCategory":"Game","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
 </head>
 <body>
-<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"><h1>متین باندیکوت</h1><p>متین باندیکوت، بازی ماجراجویی سه‌بعدی رایگان با هشت مرحله و موسیقی آرام. همین‌جا آنلاین بازی کن.</p></div>
-<div id="stage">
+<h1 style="position:absolute;left:-9999px">متین باندیکوت – Matin Bandicoot</h1><p style="position:absolute;left:-9999px">بازی آنلاین و رایگان متین باندیکوت با ده مرحله، باس‌فایت و داستان.</p><div id="stage">
 <canvas id="c"></canvas>
 <div id="hud"><span id="hl"></span><span id="hn"></span><span id="hm"></span><span id="hc"></span><span id="hs"></span></div><div id="bb"><i id="bi"></i></div>
 <div id="pr"><i id="pi"></i></div><div id="tt"></div>
@@ -67,7 +65,9 @@ const TH=[
 {n:'قلعه آتشین',sky:0x4a2030,fog:0x6a3038,top:0x8a8a98,side:0x4a4450,leaf:0xd9421e,w:5.2,gap:[3.5,4.6],len:56,hz:.62,wa:0xff4a1a,tr:2,sun:0xff8844,cc:0xffffff,bc:0xb81e1e,bh:4},
 {n:'غار کریستالی',sky:0x0c1230,fog:0x1a2250,top:0x5560a0,side:0x2a2f5a,leaf:0x66e0ff,w:5,gap:[3.5,4.6],len:60,hz:.65,wa:0x2030a0,tr:3,sun:0xcfe8ff,em:0x2288aa,cc:0x3a4890,bc:0x9a5aff,bh:5}];
 TH.push({n:'جزیره ابری',sky:0xffc2e8,fog:0xfff0fa,top:0xffffff,side:0xd8b8ff,leaf:0xff7ad0,w:5,gap:[3.5,4.7],len:62,hz:.66,wa:0xb8e0ff,tr:0,sun:0xfff7c0,cc:0xffffff,bc:0xff5ab0,bh:5},
-{n:'شهر نئونی',sky:0x14062e,fog:0x2a0f55,top:0x3a2a7a,side:0x1c1240,leaf:0xff2fd6,w:4.8,gap:[3.6,4.8],len:64,hz:.7,wa:0x1a0a40,tr:3,sun:0xff4fd8,em:0x8a1a88,cc:0x4a2090,bc:0x00e5ff,bh:5});
+{n:'شهر نئونی',sky:0x14062e,fog:0x2a0f55,top:0x3a2a7a,side:0x1c1240,leaf:0xff2fd6,w:4.8,gap:[3.6,4.8],len:64,hz:.7,wa:0x1a0a40,tr:3,sun:0xff4fd8,em:0x8a1a88,cc:0x4a2090,bc:0x00e5ff,bh:5},
+{n:'باتلاق سمی',sky:0x1a2a10,fog:0x2c4a1c,top:0x5a7a30,side:0x2a3a18,leaf:0x9aff3a,w:4.6,gap:[3.6,4.9],len:66,hz:.72,wa:0x3a5a10,tr:1,sun:0xd8ff7a,em:0x2a6a10,cc:0x4a6a2a,bc:0x7aff2a,bh:6},
+{n:'نبرد آخر با دکتر نئو',sky:0x050010,fog:0x1a0830,top:0x6a2a9a,side:0x2a0f4a,leaf:0xffd23a,w:4.4,gap:[3.7,5],len:70,hz:.75,wa:0x300040,tr:4,sun:0xff2a5a,em:0x6a1a00,cc:0x3a1a5a,bc:0xffd23a,bh:7});
 const R=new THREE.WebGLRenderer({canvas:$('c'),antialias:true});R.setPixelRatio(Math.min(devicePixelRatio||1,2));R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;
 const scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(62,1,.1,130);
 scene.add(new THREE.HemisphereLight(0xffffff,0x667766,.75));const rim=new THREE.DirectionalLight(0xaaddff,.4);rim.position.set(-6,8,-12);scene.add(rim);
@@ -88,7 +88,7 @@ const ad=(geo,m,x,y,z,sx,sy,sz)=>{const e=new THREE.Mesh(geo,m);e.position.set(x
 ad(SP,o,0,1,0,.55,.6,.45);ad(SP,bl,0,.6,0,.5,.3,.42);ad(SP,o,0,1.78,0,.5,.5,.48);
 ad(SP,sk,0,1.68,-.3,.3,.24,.24);ad(SP,BKM,0,1.74,-.52,.07,.06,.06);
 for(const s of[-1,1]){ad(SP,WM,s*.18,1.9,-.38,.14,.15,.1);ad(SP,BKM,s*.18,1.9,-.47,.06,.07,.05);ad(new THREE.ConeGeometry(.14,.4,6),o,s*.3,2.3,0,1,1,1)}
-ad(SP,bl,0,1.05,.42,.38,.45,.2);
+ad(SP,bl,0,1.05,.42,.38,.45,.2);ad(SP,M(0xffd23a,0x886600),0,1.05,-.44,.12,.12,.04);
 const tl=ad(new THREE.ConeGeometry(.14,.8,8),o,0,.5,.75,1,1,1);tl.rotation.x=Math.PI/2+.4;g.tl=tl;
 const hb=new THREE.Mesh(new THREE.TorusGeometry(.5,.07,6,20),M(0xe23b2e));hb.position.set(0,1.98,0);hb.rotation.x=Math.PI/2;g.add(hb);
 const sm=new THREE.Mesh(new THREE.TorusGeometry(.09,.022,6,12,Math.PI),BKM);sm.position.set(0,1.6,-.53);sm.rotation.z=Math.PI;g.add(sm);
@@ -114,7 +114,7 @@ else if(i==2){const c=M(0x3a8a3a);a(CY,c,0,.8,0,.2,1.6,.2);a(CY,c,.35,.9,0,.1,.5
 else if(i==3){a(SP,WM,0,.4,0,.45,.4,.45);a(SP,WM,0,1,0,.33,.3,.33);a(CN,M(0xff7a1a),0,1.02,.3,.06,.3,.06).rotation.x=Math.PI/2;a(SP,BKM,-.1,1.08,.28,.04,.04,.04);a(SP,BKM,.1,1.08,.28,.04,.04,.04)}
 else if(i==4){a(DD,M(0x2a2428,0x220800),0,.5,0,.6,.7,.6);a(CN,M(0xff5a1a,0xff3a00),0,1.2,0,.18,.9,.18)}
 else if(i==6){a(CY,WM,0,.8,0,.015,1.6,.015);a(SP,M(0xff7ad0,0x551144),0,1.9,0,.4,.5,.4)}
-else{const col=i==7?0xff2fd6:0x66e0ff;for(let k=0;k<3;k++)a(CN,M(col,col),k*.28-.28,.5+k*.12,0,.14,.9+k*.35,.14)}
+else if(i==8){a(CY,M(0x4a6a2a),0,.4,0,.1,.8,.1);a(SP,M(0x9aff3a,0x44aa00),0,.85,0,.45,.22,.45);a(SP,WM,.15,.92,.1,.06,.05,.06)}else if(i==9){a(CY,M(0x3a1a5a),0,1,0,.25,2,.25);a(SP,M(0xffd23a,0xaa7700),0,2.1,0,.28,.28,.28)}else{const col=i==7?0xff2fd6:0x66e0ff;for(let k=0;k<3;k++)a(CN,M(col,col),k*.28-.28,.5+k*.12,0,.14,.9+k*.35,.14)}
 g.position.set(x,0,z);W.add(g)}
 function decor(i,T,s,w,z1){const eb=new THREE.Mesh(BX,EBM);eb.scale.set(.45,.3,13.8);eb.position.set(s*(w/2-.2),.1,z1-7);W.add(eb);
 for(let k=0;k<4;k++){const gt=new THREE.Mesh(CN,GTM);gt.scale.set(.1,D(.3,.6),.1);gt.position.set(s*(w/2-D(.1,.7)),.35,z1-D(0,14));W.add(gt)}
@@ -139,6 +139,10 @@ function mask(x,z){const g=new THREE.Group(),a=aku();a.scale.setScalar(.85);g.ad
 function mkCrab(c){const g=new THREE.Group(),r=M(c);const a=(m,X,Y,Z,sx,sy,sz)=>{const e=new THREE.Mesh(SP,m);e.position.set(X,Y,Z);e.scale.set(sx,sy,sz);g.add(e)};
 a(r,0,.4,0,.6,.35,.45);a(r,-.75,.55,-.2,.22,.2,.22);a(r,.75,.55,-.2,.22,.2,.22);a(WM,-.2,.8,-.3,.12,.12,.12);a(WM,.2,.8,-.3,.12,.12,.12);a(BKM,-.2,.8,-.4,.05,.05,.05);a(BKM,.2,.8,-.4,.05,.05,.05);
 return g}
+function mkBoss(i,c){const g=mkCrab(c),gd=M(0xffd23a,0x886600),a=(geo,m,x,y,z,sx,sy,sz,rz)=>{const e=new THREE.Mesh(geo,m);e.position.set(x,y,z);e.scale.set(sx,sy,sz);if(rz)e.rotation.z=rz;g.add(e);return e};
+if(i>=1)a(CN,gd,0,.85,.05,.12,.28,.12);if(i>=3)for(const s of[-1,1])a(CN,gd,s*.2,.8,.05,.09,.22,.09);
+if(i>=4)for(const s of[-1,1])a(CN,WM,s*.5,.75,-.1,.08,.4,.08,s*-.5);if(i>=5)for(const s of[-1,1])a(SP,M(0xff2222,0xff0000),s*.35,.62,-.38,.08,.08,.06);
+if(i>=7)for(let k=-2;k<=2;k++)a(CN,M(0x222222),k*.2,.7,.25,.07,.25,.07);if(i>=8)a(SP,M(0x66ff33,0x22aa00),0,.15,-.4,.2,.1,.1);return g}
 function crab(x,z,w){const g=mkCrab(0xe23b2e);g.position.set(x,0,z);W.add(g);L.en.push({bx:x,z,m:g,a:1,s:R2(1.5,2.5),ph:rnd()*6,amp:Math.min(2.5,w/2-.9)})}
 function wall(x,z,w){const m=new THREE.Mesh(BX,M(0x8a8a96));m.scale.set(w*.7,1,.5);m.position.set(x,.5,z);m.add(new THREE.LineSegments(EG,LM));W.add(m);L.ob.push({z,m,hw:w*.35+.3})}
 function logx(z,w){const m=new THREE.Mesh(new THREE.CylinderGeometry(.5,.5,1.6,12),M(0x8b5a2b));m.rotation.x=Math.PI/2;m.position.set(0,.5,z);
@@ -147,7 +151,7 @@ W.add(m);L.ob.push({z,m,log:1,ph:rnd()*6,amp:w/2-.7})}
 const FC=[0xff5a8a,0xffe14a,0xffffff,0xb06aff,0xff8a3a];
 function tree(x,z,i){const c=new THREE.Mesh(CRO[i],LF);c.position.set(x,[4.3,4.3,5,2.2,1.75][i],z);c.userData.x=x;c.userData.s=Math.random()*6;TS.push(c);if(i==1)c.scale.y=.45;if(i==3)c.rotation.z=R2(-.3,.3);if(i<3){const a=new THREE.Mesh(TRK,TM);a.position.set(x,1.5,z);W.add(a)}W.add(c)}
 function build(i){TS=[];if(W)scene.remove(W);W=new THREE.Group();scene.add(W);const T=TH[i];sd=100+i*37;
-scene.background=skyTex(new THREE.Color(T.sky).multiplyScalar(.72),new THREE.Color(T.fog));scene.fog=new THREE.Fog(T.fog,30,100);LF=M(T.leaf,T.em||0);EBM=M(new THREE.Color(T.top).multiplyScalar(.72));GTM=M(T.leaf,T.em||0);const RKM=M(new THREE.Color(T.side).multiplyScalar(1.2));FP.material.color.setHex(T.sun);{const am=AMB[i]||AMB[0];FP.material.size=am.s;FA=am.f}ST.visible=[4,5,7].includes(i);
+scene.background=skyTex(new THREE.Color(T.sky).multiplyScalar(.72),new THREE.Color(T.fog));scene.fog=new THREE.Fog(T.fog,30,100);LF=M(T.leaf,T.em||0);EBM=M(new THREE.Color(T.top).multiplyScalar(.72));GTM=M(T.leaf,T.em||0);const RKM=M(new THREE.Color(T.side).multiplyScalar(1.2));FP.material.color.setHex(T.sun);{const am=AMB[i]||AMB[0];FP.material.size=am.s;FA=am.f}ST.visible=[4,5,7,8,9].includes(i);
 L={T,tiles:[],fr:[],cr:[],en:[],ob:[],cps:[],ms:[],cpZ:-3,f:0,c:0,gf:0,gc:0,fin:0};
 const mats=[M(T.side),M(T.side),M(T.top),M(T.side),M(T.side),M(T.side)],MM=M(new THREE.Color(T.fog).multiplyScalar(.75));let z=0;
 for(let s=0;s<T.len;s++){const w=s<2?T.w:(rnd()<.3?T.w*.7:T.w),z1=z,z0=z-14;
@@ -165,7 +169,7 @@ z=z0;if(s>=2&&s<T.len-2&&rnd()<Math.min(.6,.4+i*.04)){const g=R2(T.gap[0],T.gap[
 const rg=new THREE.Mesh(new THREE.TorusGeometry(aw/2,.15,6,24),M(0x999999));rg.position.set(0,0,z1-3);W.add(rg);L.cps.push({z:z1-3,hit:0,m:rg});
 L.fin=z-14;const gz=z-24;for(const q of[-1,1]){const pl=new THREE.Mesh(BX,M(0xffd23a,0x886600));pl.scale.set(.6,5,.6);pl.position.set(q*aw/2,2.5,gz);W.add(pl)}
 const br=new THREE.Mesh(BX,M(0xffd23a,0x886600));br.scale.set(aw,.7,.6);br.position.set(0,5,gz);W.add(br);
-const bm=mkCrab(T.bc);bm.scale.setScalar(2.6);bm.position.set(0,0,L.fin);W.add(bm);L.boss={m:bm,hp:T.bh,max:T.bh,bz:L.fin,inv:0,dead:0,on:0,bt:1.2,aw}}
+const bm=mkBoss(i,T.bc);bm.scale.setScalar(2.6);bm.position.set(0,0,L.fin);W.add(bm);L.boss={m:bm,hp:T.bh,max:T.bh,bz:L.fin,inv:0,dead:0,on:0,bt:1.2,aw}}
 fl=new THREE.Mesh(new THREE.PlaneGeometry(600,600),new THREE.MeshBasicMaterial({color:T.wa}));fl.rotation.x=-Math.PI/2;fl.position.y=-3;W.add(fl);
 sunM=new THREE.Mesh(SP,new THREE.MeshBasicMaterial({color:T.sun,fog:false}));sunM.scale.setScalar(9);W.add(sunM);
 W.traverse(o=>{if(o.isMesh&&o!==fl&&o!==sunM){o.castShadow=true;o.receiveShadow=true}});
@@ -173,9 +177,10 @@ const cm=new THREE.MeshBasicMaterial({color:T.cc,transparent:true,opacity:.85});
 function newP(){shield=0;combo=0;comboT=0;shake=0;BL.length=0;p={x:0,y:0,z:-3,vy:0,gr:1,coy:.12,spin:0,inv:0,face:0,mv:0};hero.fa=0;hero.sa=0;cool=0;jq=0;K.s=0;cam.position.set(0,3.6,4)}
 // ---- بازی ----
 function hud(){$('hl').textContent=('❤'.repeat(Math.max(hp,0))||'💔')+(shield?' 🛡️ محافظ':'');$('hn').textContent=(lvl+1)+'. '+L.T.n;$('hm').textContent='🥭 '+L.gf;$('hc').textContent='📦 '+L.gc+'/'+L.c;$('hs').textContent='⭐ '+score}
+const STORY=['دکتر نئو انبه‌های جزیره رو دزدیده! متین راهی میشه 🥭','رد انبه‌ها تا ساحل ادامه داره. مراقب خرچنگ‌ها باش!','گرمای صحرا امونتو می‌بره، ولی دکتر نئو دور نیست.','برف و سرما؟ متین با روسریش گرم می‌مونه ❄️','قلعه آتشین نگهبان‌های دکتر نئو! 🔥','توی غار، کریستال‌ها راه رو نشون میدن 💎','بالای ابرها؛ نزدیک شدی!','شهر نئونی؛ پایگاه مخفی دکتر نئو 🌃','باتلاق سمی! از جعبه N دوری کن ☠️','نبرد آخر با دکتر نئو! انبه‌ها رو پس بگیر 👑'];
 function toast(s){const e=$('tt');e.textContent=s;e.style.opacity=1;setTimeout(()=>e.style.opacity=0,1800)}
 function show(h,msg,btn,cb){state='ui';$('lv').style.display='none';$('go').style.display='inline-block';$('t').textContent=h;$('d').innerHTML=msg;$('go').textContent=btn;$('ov').style.display='flex';$('go').onclick=()=>{$('ov').style.display='none';cb()}}
-function startLevel(i,retry){menu=false;lvl=i;build(i);hp=3;if(retry)score=ls;else{if(i==0)score=0;ls=score}newP();$('bb').style.display='none';$('bi').style.width='100%';hud();state='play';toast('مرحله '+(i+1)+': '+TH[i].n)}
+function startLevel(i,retry){menu=false;lvl=i;build(i);hp=3;if(retry)score=ls;else{if(i==0)score=0;ls=score}newP();$('bb').style.display='none';$('bi').style.width='100%';hud();state='play';toast('مرحله '+(i+1)+': '+TH[i].n);setTimeout(()=>{if(state=='play'&&lvl==i)toast(STORY[i])},2100)}
 function over(){state='ui';$('bb').style.display='none';beep(120,.5,'sawtooth');const nb=saveBest();show('باختی! 💔','اشکالی نداره، دوباره امتحان کن!<br>⭐ '+score+' &nbsp; 🏅 رکورد: '+best+(nb?'<br>رکورد جدید! 🎉':''),'تلاش دوباره',()=>startLevel(lvl,1));buildLV()}
 function done(){if(lvl+1<TH.length&&lvl+1>U){U=lvl+1;try{localStorage.setItem('jj_u',U)}catch(e){}}const st=1+(L.gf>=L.f*.8?1:0)+(L.gc==L.c?1:0);$('bb').style.display='none';const last=lvl==TH.length-1;score+=hp*200+(L.gc==L.c?500:0);beep(880,.3,'triangle');const nb=saveBest();
 show(last?'تو قهرمان شدی! 🏆':'مرحله تموم شد! 🎉','<div style="font-size:30px">'+'⭐'.repeat(st)+'☆'.repeat(3-st)+'</div>🥭 '+L.gf+' از '+L.f+'<br>📦 '+L.gc+' از '+L.c+(L.gc==L.c?'<br>همه جعبه‌ها رو شکستی! ⭐':'')+'<br>⭐ امتیاز: '+score+' &nbsp; 🏅 رکورد: '+best+(nb?'<br>رکورد جدید! 🎉':''),last?'بازی از اول':'مرحله بعد',()=>startLevel(last?0:lvl+1));buildLV()}
@@ -183,7 +188,7 @@ function hurt(){if(p.inv>0)return;if(shield){shield=0;p.inv=1.2;p.vy=6;shake=.35
 function respawn(){hp--;hud();if(hp<=0)return over();p.x=0;p.z=L.cpZ;p.y=2;p.vy=0;p.inv=1.5}
 function addC(b){combo=comboT>0?combo+1:1;comboT=2.2;const m=Math.min(combo,5);score+=b*m;if(m>1)toast('کمبو ×'+m+' 🔥')}
 function dust(){const m=new THREE.Mesh(BX,DM);m.scale.setScalar(.2);m.position.set(p.x,.1,p.z+.4);m.v=new THREE.Vector3(R2(-.8,.8),R2(.8,1.8),R2(.5,1.5));m.life=.35;W.add(m);PM.push(m)}
-function bossFire(dt){const B=L.boss;B.ft=(B.ft==null?2:B.ft)-dt;if(B.ft>0)return;B.ft=Math.max(1.4,2.8-(B.max-B.hp)*.35);const b=new THREE.Mesh(SP,M(0x222222,0x551100));b.scale.setScalar(.6);b.position.set(B.m.position.x,.6,B.m.position.z+1.8);b.castShadow=true;W.add(b);BL.push(b);beep(180,.1)}
+function bossFire(dt){const B=L.boss;B.ft=(B.ft==null?2:B.ft)-dt;if(B.ft>0)return;B.ft=Math.max(lvl>=8?1:1.4,2.8-(B.max-B.hp)*.35);const b=new THREE.Mesh(SP,M(0x222222,0x551100));b.scale.setScalar(.6);b.position.set(B.m.position.x,.6,B.m.position.z+1.8);b.castShadow=true;W.add(b);BL.push(b);if(lvl>=4)for(const s of[-1,1]){const c=b.clone();c.vx=s*3.2;W.add(c);BL.push(c)}beep(180,.1)}
 function burst(x,y,z,c){const mt=M(c);for(let i=0;i<8;i++){const m=new THREE.Mesh(BX,mt);m.scale.setScalar(.18);m.position.set(x,y,z);m.v=new THREE.Vector3(R2(-3,3),R2(2,6),R2(-3,3));m.life=.6;W.add(m);PM.push(m)}}
 function tileAt(){for(const q of L.tiles)if(p.z<=q.z1+.3&&p.z>=q.z0-.3&&Math.abs(p.x)<=q.w/2+.1)return q;return null}
 function brk(c){if(c.ty==2){c.a=0;c.m.visible=false;burst(c.x,.6,c.z,0x44ee44);burst(c.x,1,c.z,0xffff44);beep(100,.3,'sawtooth');shake=.5;hurt();return}if(c.ty==1){if(!c.fuse){c.fuse=3;toast('TNT! 💣 فرار کن');beep(500,.1)}return}c.a=0;c.m.visible=false;L.gc++;addC(50);shake=.12;burst(c.x,.5,c.z,0xd9a04a);beep(240,.12);hud()}
@@ -212,7 +217,7 @@ if(o.log?(dx<.85&&dz<.95&&p.y<.95):(dx<o.hw&&dz<.6&&p.y<1))hurt()}
 for(const c of L.cps)if(!c.hit&&p.z<c.z){c.hit=1;L.cpZ=c.z;c.m.material=M(0x44ee66,0x116622);toast('نقطه ذخیره ✔');beep(660,.15,'triangle')}
 for(let i=PM.length-1;i>=0;i--){const m=PM[i];m.position.addScaledVector(m.v,dt);m.v.y-=18*dt;m.life-=dt;if(m.life<=0){W.remove(m);PM.splice(i,1)}}
 $('pi').style.width=Math.min(100,p.z/L.fin*100)+'%';
-for(let i=BL.length-1;i>=0;i--){const b=BL[i];b.position.z+=9*dt;b.rotation.x+=dt*8;const dx=Math.abs(b.position.x-p.x),dz=Math.abs(b.position.z-p.z);
+for(let i=BL.length-1;i>=0;i--){const b=BL[i];b.position.z+=9*dt;b.position.x+=(b.vx||0)*dt;b.rotation.x+=dt*8;const dx=Math.abs(b.position.x-p.x),dz=Math.abs(b.position.z-p.z);
 if(p.spin>0&&dx<1.5&&dz<1.4&&p.y<1.3){addC(50);burst(b.position.x,.6,b.position.z,0x555555);W.remove(b);BL.splice(i,1);beep(500,.08)}
 else if(dx<.85&&dz<.8&&p.y<1){W.remove(b);BL.splice(i,1);hurt()}
 else if(b.position.z>p.z+7||L.boss.dead){W.remove(b);BL.splice(i,1)}}
@@ -275,7 +280,7 @@ function saveBest(){if(score>best){best=score;try{localStorage.setItem('jj_b',be
 function setC(i){hc=i;hero.mat.color.setHex(HC[i]);try{localStorage.setItem('jj_c',i)}catch(e){}[...$('sw').children].forEach((b,k)=>b.style.outline=k==i?'3px solid #3a2210':'none')}
 HC.forEach((c,i)=>{const b=document.createElement('button');b.style.cssText='width:34px;height:34px;border-radius:50%;border:0;margin:0 4px;background:#'+c.toString(16).padStart(6,'0');b.onclick=()=>setC(i);$('sw').appendChild(b)});setC(hc);
 build(0);newP();hud();
-show('متین باندیکوت 🦊','بازی کاملاً رایگان! هشت مرحله و یه باس آخر هر مرحله!<br>🎵 موسیقی آرام در حین بازی پخش می‌شه (با دکمه 🔊 قطعش کن).<br>رنگ شخصیتت رو انتخاب کن، انبه جمع کن، جعبه‌ها رو بشکن، از روی تیغ‌ها بپر و با پرش یا چرخش باس رو شکست بده.<br>🛡️ ماسک «آکو آکو» (محافظ) یه ضربه رو تحمل می‌کنه. جعبه TNT 💣 بعد از ۳ ثانیه می‌ترکه و جعبه‌ی سبز N رو لمس نکن!<br>مرحله‌ها یکی‌یکی باز می‌شن 🔓. باس توپ پرت می‌کنه: بپر یا بچرخ!<br>کیبورد: WASD یا فلش‌ها حرکت، فاصله = پرش، X = چرخش، P = وقفه','شروع',()=>startLevel(0));buildLV();
+show('متین باندیکوت 🦊','بازی کاملاً رایگان! ده مرحله و یه باس آخر هر مرحله!<br>🎵 موسیقی آرام در حین بازی پخش می‌شه (با دکمه 🔊 قطعش کن).<br>رنگ شخصیتت رو انتخاب کن، انبه جمع کن، جعبه‌ها رو بشکن، از روی تیغ‌ها بپر و با پرش یا چرخش باس رو شکست بده.<br>🛡️ ماسک «آکو آکو» (محافظ) یه ضربه رو تحمل می‌کنه. جعبه TNT 💣 بعد از ۳ ثانیه می‌ترکه و جعبه‌ی سبز N رو لمس نکن!<br>مرحله‌ها یکی‌یکی باز می‌شن 🔓. باس توپ پرت می‌کنه: بپر یا بچرخ!<br>کیبورد: WASD یا فلش‌ها حرکت، فاصله = پرش، X = چرخش، P = وقفه','شروع',()=>startLevel(0));buildLV();
 requestAnimationFrame(frame);
 </script>
 <script>
